@@ -20,9 +20,9 @@ set(JAVA_INCLUDE_PATH "${JAVA_HOME}/include")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${LIBRARY_PATH})
 add_library(dlib-jni SHARED io_github_glorrian_DlibInterface.cpp)
 
-set(DLib_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/build/dlib/)
+set(DLib_LOCATION ${CMAKE_BINARY_DIR}/dlib/)
 execute_process (
-    COMMAND bash -c "git clone https://github.com/davisking/dlib.git"
+   COMMAND bash -c "git clone https://github.com/davisking/dlib.git"
 )
 add_subdirectory(${DLib_LOCATION} dlib_build)
 
