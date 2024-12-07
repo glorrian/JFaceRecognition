@@ -10,10 +10,10 @@ extern "C" {
 /*
  * Class:     io_github_glorrian_DlibInterface
  * Method:    detectFaces
- * Signature: ([BII)[I
+ * Signature: (JII)[I
  */
 JNIEXPORT jintArray JNICALL Java_io_github_glorrian_DlibInterface_detectFaces
-  (JNIEnv *, jclass, jbyteArray, jint, jint);
+  (JNIEnv *, jclass, jlong, jint, jint);
 
 #ifdef __cplusplus
 }

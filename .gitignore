@@ -25,6 +25,7 @@ bin/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.cache/
 
 ### NetBeans ###
 /nbproject/private/
@@ -35,3 +36,12 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Native build, CMake, IDE build files
+**/cmake-build-debug/
+*.dylib
+*.so
+*.dll
+*.a
+*.lib
+

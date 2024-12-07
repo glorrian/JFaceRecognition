@@ -18,7 +18,10 @@ dependencies {
 }
 
 cmake {
-    arguments = listOf("-DLIBRARY_PATH=../../src/main/resources")
+    arguments = listOf(
+        "-DLIBRARY_PATH=../../src/main/resources",
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+    )
 }
 
 tasks.test {
