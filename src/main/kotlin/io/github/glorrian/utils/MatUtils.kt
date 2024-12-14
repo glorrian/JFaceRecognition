@@ -18,6 +18,6 @@ class MatUtils {
         fun toMat(image: InputStream): Mat {
             val bytes = image.readBytes()
             return toMat(bytes)
-        }
+
     }
 }
